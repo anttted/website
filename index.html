@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving World Transport</title>
+    <meta name="description" content="MW Transport: A family-run home removal and delivery company offering reliable, friendly, and efficient services across the UK. Get a stress-free move today!">
+    <meta name="keywords" content="home removals, removal company UK, house movers, furniture transport, small item delivery, family business, transport services, UK logistics, moving company">
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon_io/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto flex items-center justify-between px-4 lg:px-8">
+            <div class="flex-shrink-0">
+                <img src="MWlogo3a.png" alt="MW Transport Company Logo" class="h-24 w-auto">
+            </div>
+
+            <!-- Hamburger Menu Button (Visible on Mobile) -->
+            <button id="burger-menu" class="md:hidden flex items-center px-3 py-2 rounded-lg focus:outline-none" aria-label="Toggle navigation menu">
+                <span class="burger-icon">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+
+            <!-- Navigation Menu -->
+            <nav id="nav-menu" class="hidden md:flex md:flex-wrap md:justify-end md:space-x-4" aria-label="Main Navigation">
+                <a href="#home-page" class="nav-link" onclick="event.preventDefault(); showPage('home')">Home</a>
+                <a href="#about-page" class="nav-link" onclick="event.preventDefault(); showPage('about')">About Us</a>
+                <a href="#services-page" class="nav-link" onclick="event.preventDefault(); showPage('services')">Our Services</a>
+                <a href="#contact-page" class="nav-link" onclick="event.preventDefault(); showPage('contact')">Contact Us</a>
+                <a href="#faq-page" class="nav-link" onclick="event.preventDefault(); showPage('faq')">FAQ</a>
+                <a href="#testimonials-page" class="nav-link" onclick="event.preventDefault(); showPage('testimonials')">Testimonials</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-4 lg:px-8 pb-16">
+        <section id="home-page" class="page-section active">
+            <div class="max-w-4xl mx-auto mb-12 text-center px-4">
+                <h2 class="text-2xl md:text-3xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">
+                    Your Trusted Partner for Smooth Moves Across the UK
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed text-justify">
+                        Welcome to <span class="font-semibold text-blue-400">MW Transport</span>, a proud family-run transportation business dedicated to delivering reliable, friendly, and efficient services across the UK. We complete a wide range of deliveries - from household moves to single-item transport - always with care and professionalism.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed text-justify">
+                        At the heart of our company is a close-knit team that values trust, hard work, and clear communication. As a family-run business, we treat every move as if it were our own - ensuring your items are handled safely and your delivery is stress-free.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-10 leading-relaxed text-justify">
+                        Whether you need help with a home move, furniture transport, or a commercial delivery, MW Transport is here to help!
+                    </p>
+                    <button class="btn btn-primary text-xl shadow-lg hover:shadow-xl" onclick="showPage('contact')">Contact us!</button>
+                </div>
+
+                <div class="flex justify-center md:justify-end">
+                    <img src="https://www.thetimes.com/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F7ce39a3e-f3c6-11ec-a31c-df89d02344da.jpg?crop=5355%2C3012%2C0%2C279" alt="Mariana and Ciprian, owners of MW Transport, standing proudly in front of their removal van." class="rounded-2xl shadow-xl max-w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="about-page" class="page-section hidden">
+            <div class="card max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Our Story: A Family Dedicated to Your Move</h2>
+                <div class="prose lg:prose-lg text-gray-700 mx-auto space-y-8">
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <p class="flex-1 mb-0 text-justify">
+                            At MW Transport, our business is more than just logistics; it's a reflection of our family values. Founded by real-life partners Mariana and Ciprian, we built this company on the principles of trust, dedication, and genuine care for our clients and their belongings.
+                        </p>
+                        <img src="https://placehold.co/400x250/ADD8E2/000000?text=Mariana+and+Ciprian" alt="A professional portrait of Mariana and Ciprian, the founders of MW Transport." class="w-full md:w-1/3 h-auto object-cover rounded-xl shadow-md">
+                    </div>
+
+                    <div class="flex flex-col md:flex-row-reverse items-start gap-6">
+                        <p class="flex-1 mb-0 text-justify">
+                            Having navigated many moves ourselves, we understand that transporting your precious items can be a significant source of stress. That's why we committed to creating a service that stands out for its personal touch and unwavering reliability. When you choose MW Transport, you're not just hiring movers; you're inviting a team that treats your possessions with the same respect and attention we give our own.
+                        </p>
+                        <img src="https://placehold.co/400x250/ADD8E2/000000?text=Mariana+and+Ciprian" alt="A professional portrait of Mariana and Ciprian, the founders of MW Transport." class="w-full md:w-1/3 h-auto object-cover rounded-xl shadow-md">
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-start gap-6">
+                        <p class="flex-1 mb-0 text-justify">
+                            Ciprian, with his meticulous planning and robust driving experience, ensures every route is optimized for efficiency and safety. Mariana, with her keen eye for detail and commitment to clear communication, manages the logistics and ensures every client feels heard and valued. Together, we form a formidable team dedicated to making your transport experience as seamless and stress-free as possible.
+                        </p>
+                        <img src="https://placehold.co/400x250/ADD8E2/000000?text=Mariana+and+Ciprian" alt="A professional portrait of Mariana and Ciprian, the founders of MW Transport." class="w-full md:w-1/3 h-auto object-cover rounded-xl shadow-md">
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-justify max-w-3xl mx-auto">
+                            We believe that a successful move isn't just about getting from A to B; it's about peace of mind. Our ethos is simple: hard work, honesty, and a friendly approach in every interaction. We're proud to serve communities across the UK, helping individuals and families start their new chapters with confidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services-page" class="page-section hidden">
+            <div class="card max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Our Comprehensive UK Transport Services</h2>
+                <p class="text-lg text-gray-700 mb-8 text-center">
+                    MW Transport offers a versatile range of reliable and efficient services, tailored to meet your unique needs anywhere in the UK.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4 flex items-center">
+                            <span class="mr-3 text-blue-600">🏠</span> Home Removals
+                        </h3>
+                        <p class="text-gray-700 text-justify">
+                            Planning a house move? Our experienced team handles everything from single-room apartments to multi-bedroom houses. We ensure your furniture, appliances, and personal belongings are carefully packed, loaded, transported, and unloaded with the utmost care. We make moving day stress-free.
+                        </p>
+                    </div>
+                    <div class="bg-green-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold text-green-800 mb-4 flex items-center">
+                            <span class="mr-3 text-green-600">📦</span> Small Item & Furniture Transport
+                        </h3>
+                        <p class="text-gray-700 text-justify">
+                            Need to move a single piece of furniture, an antique, or a few boxes? Our dedicated small item transport service is perfect for those smaller, yet equally important, deliveries. Fast, secure, and affordable, ideal for online purchases, inherited items, or gifts.
+                        </p>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold text-yellow-800 mb-4 flex items-center">
+                            <span class="mr-3 text-yellow-600">🇬🇧</span> Nationwide Coverage (UK)
+                        </h3>
+                        <p class="text-gray-700 text-justify">
+                            Wherever you are in the UK, and wherever you need to go, MW Transport is ready to serve. From bustling city centers to quiet rural towns, our comprehensive logistics network ensures timely and safe delivery of your goods across the entire country.
+                        </p>
+                    </div>
+                    <div class="bg-purple-50 p-6 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-semibold text-purple-800 mb-4 flex items-center">
+                            <span class="mr-3 text-purple-600">🏢</span> Commercial & Business Deliveries
+                        </h3>
+                        <p class="text-gray-700 text-justify">
+                            Beyond household moves, we also offer reliable transport solutions for businesses. Whether it's office equipment, stock transfers, or sensitive documents, trust MW Transport to handle your commercial deliveries with efficiency and discretion.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-xl text-gray-700 mb-6">Ready for a seamless move? Get in touch with us today for a free quote!</p>
+                    <button class="btn btn-primary text-xl shadow-lg hover:shadow-xl" onclick="showPage('contact')">Request a Free Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-page" class="page-section hidden">
+            <div class="card max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Get in Touch with MW Transport</h2>
+                <p class="text-lg text-gray-700 mb-8 text-center">
+                    We'd love to hear from you! Fill out the form below or reach us directly.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <form id="contactForm" action="https://formspree.io/f/xanjvwpp" method="POST" class="space-y-6">
+                            <div class="field-box">
+                                <label for="firstName" class="block text-gray-700 text-sm font-medium mb-2">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="input-field" placeholder="John" required>
+                            </div>
+                            <div class="field-box">
+                                <label for="surname" class="block text-gray-700 text-sm font-medium mb-2">Surname</label>
+                                <input type="text" id="surname" name="surname" class="input-field" placeholder="Doe" required>
+                            </div>
+                            <div class="field-box">
+                                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="input-field" placeholder="john.doe@example.com" required>
+                            </div>
+                            <div class="field-box">
+                                <label for="phone" class="block text-gray-700 text-sm font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="input-field" placeholder="07123 456789">
+                            </div>
+                            <div class="field-box">
+                                <label for="subject" class="block text-gray-700 text-sm font-medium mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="input-field" placeholder="Quote Request" required>
+                            </div>
+                            <div class="field-box">
+                                <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" name="message" rows="6" class="input-field resize max-w-full max-h-40" placeholder="Please describe your moving needs..." required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary w-full md:w-auto">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="flex justify-center items-center h-full">
+                        <img src="https://www.shutterstock.com/image-photo/vertical-side-view-beautiful-blond-600nw-2261833293.jpg" alt="Contact Us Image - A team member on the phone, assisting a client." class="rounded-xl shadow-lg max-w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-gray-200 text-center">
+                    <p class="text-lg text-gray-700 mb-4">You can also reach us directly:</p>
+                    <div class="space-y-4">
+                        <p class="text-xl font-semibold text-gray-900">
+                            Email: <a href="mailto:contact@movingworldtransport.co.uk" class="text-blue-400 hover:underline">
+                                <span id="company-email">contact@movingworldtransport.co.uk</span>
+                            </a>
+                        </p>
+                        <p class="text-xl font-semibold text-gray-900">
+                            Phone: <a href="tel:+447789616972" class="text-blue-400 hover:underline">
+                                <span id="company-phone">07789616972</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq-page" class="page-section hidden">
+            <div class="card max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">How do I get a quote?</h3>
+                        <p class="text-gray-700 text-justify">You can get a free, no-obligation quote by filling out our contact form or calling us directly. Please provide as much detail as possible about your move or delivery.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Do you provide packing services?</h3>
+                        <p class="text-gray-700 text-justify">While our primary service is transport, we can discuss packing assistance based on your specific needs. Please mention this when requesting a quote.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">What areas do you cover?</h3>
+                        <p class="text-gray-700 text-justify">We proudly offer our transport and removal services across the entirety of the UK, from major cities to rural locations.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">How far in advance should I book?</h3>
+                        <p class="text-gray-700 text-justify">We recommend booking as far in advance as possible, especially for larger moves or peak seasons, to ensure availability. However, we also accommodate last-minute requests when our schedule permits.</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center text-gray-600">
+                    <p>Have a question not listed here? Don't hesitate to reach out to us!</p>
+                    <button class="btn btn-secondary mt-4" onclick="showPage('contact')">Ask a Question</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials-page" class="page-section hidden">
+            <div class="card max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">What Our Clients Say</h2>
+                <div class="space-y-8">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="star-rating mb-2" data-rating="5">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-justify">"MW Transport made our move so easy and stress-free. Mariana and Ciprian were incredibly professional and friendly. Highly recommend!"</p>
+                        <p class="font-semibold text-gray-800">- Sarah L., London</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="star-rating mb-2" data-rating="4">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">☆</span>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-justify">"Excellent service for transporting a large antique cabinet. Handled with great care and delivered on time. Will definitely use again."</p>
+                        <p class="font-semibold text-gray-800">- David P., Manchester</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="star-rating mb-2" data-rating="5">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-justify">"From the initial quote to the final delivery, MW Transport was exceptional. Professional, punctual, and truly cared for our belongings. A fantastic family business!"</p>
+                        <p class="font-semibold text-gray-800">- Emily R., Bristol</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <div class="star-rating mb-2" data-rating="4">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">☆</span>
+                        </div>
+                        <p class="text-gray-700 italic mb-4 text-justify">"We've used MW Transport twice now for small item deliveries, and each time they've been incredibly efficient and friendly. They're our go-to for anything we need moved."</p>
+                        <p class="font-semibold text-gray-800">- John T., Leeds</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-lg text-gray-700">We'd love to hear about your experience! If you've used our services, please consider leaving a review.</p>
+                    <button class="btn btn-secondary mt-4" onclick="showPage('contact')">Leave a Review</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center px-4 lg:px-8">
+            <p class="text-lg mb-4">MW Transport - Your Choice for Stress-Free Removals</p>
+            <nav class="flex justify-center space-x-6 mb-4" aria-label="Footer Navigation">
+                <a href="#home-page" class="text-gray-300 hover:text-blue-400 transition-colors duration-200" onclick="event.preventDefault(); showPage('home')">Home</a>
+                <a href="#about-page" class="text-gray-300 hover:text-blue-400 transition-colors duration-200" onclick="event.preventDefault(); showPage('about')">About Us</a>
+                <a href="#services-page" class="text-gray-300 hover:text-blue-400 transition-colors duration-200" onclick="event.preventDefault(); showPage('services')">Services</a>
+                <a href="#contact-page" class="text-gray-300 hover:text-blue-400 transition-colors duration-200" onclick="event.preventDefault(); showPage('contact')">Contact</a>
+                <a href="#faq-page" class="text-gray-300 hover:text-blue-400 transition-colors duration-200" onclick="event.preventDefault(); showPage('faq')">FAQ</a>
+                <a href="#testimonials-page" class="text-gray-300 hover:text-blue-400 transition-colors duration-200" onclick="event.preventDefault(); showPage('testimonials')">Testimonials</a>
+            </nav>
+            <p class="text-sm text-gray-400">© 2025 MW Transport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Array to track internal page history
+        let pageHistory = [];
+
+        // Reset the contact form on page load
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.reset();
+        }
+
+        // Function to toggle the mobile menu
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const burgerMenu = document.getElementById('burger-menu');
+            const overlay = document.getElementById('menu-overlay');
+
+            if (navMenu.classList.contains('show')) {
+                // Close menu
+                navMenu.classList.remove('show');
+                burgerMenu.classList.remove('open');
+                if (overlay) {
+                    document.body.removeChild(overlay);
+                }
+            } else {
+                // Open menu
+                navMenu.classList.add('show');
+                burgerMenu.classList.add('open');
+
+                // Create and append overlay
+                const newOverlay = document.createElement('div');
+                newOverlay.id = 'menu-overlay';
+                newOverlay.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    z-index: 998;
+                `;
+                newOverlay.onclick = toggleMenu;
+                document.body.appendChild(newOverlay);
+            }
+        }
+
+        // Function to show a specific page
+        function showPage(pageId) {
+            // Hide all page sections
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.add('hidden');
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all nav links
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active-nav-link');
+            });
+
+            // Show the requested page section
+            const targetPage = document.getElementById(pageId + '-page');
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+                targetPage.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                // Add active class to the corresponding nav link
+                const activeNavLink = document.querySelector(`a[href="#${pageId}-page"]`);
+                if (activeNavLink) {
+                    activeNavLink.classList.add('active-nav-link');
+                }
+
+                // Update URL hash and add to history
+                history.pushState({ pageId: pageId }, '', '#' + pageId + '-page');
+                pageHistory.push(pageId);
+            }
+
+            // Close mobile menu and overlay
+            const navMenu = document.getElementById('nav-menu');
+            const burgerMenu = document.getElementById('burger-menu');
+            const overlay = document.getElementById('menu-overlay');
+            if (navMenu.classList.contains('show')) {
+                navMenu.classList.remove('show');
+                burgerMenu.classList.remove('open');
+                if (overlay) {
+                    document.body.removeChild(overlay);
+                }
+            }
+        }
+
+        // Handle browser back/forward navigation
+        window.addEventListener('popstate', (event) => {
+            const pageId = event.state?.pageId;
+
+            if (pageId && pageHistory.length > 0) {
+                showPage(pageId);
+                pageHistory.pop();
+            } else if (pageHistory.length > 0) {
+                const lastPageId = pageHistory[pageHistory.length - 1];
+                showPage(lastPageId);
+            }
+        });
+
+        // Initialize the page based on URL hash or default to home on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash;
+            const initialPage = hash ? hash.substring(1).replace('-page', '') : 'home';
+            showPage(initialPage);
+
+            // Burger menu toggle
+            const burgerMenu = document.getElementById('burger-menu');
+            burgerMenu.addEventListener('click', toggleMenu);
+        });
+
+        // Custom alert/message box function
+        function alertMessage(message) {
+            const messageBox = document.createElement('div');
+            messageBox.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                z-index: 1000;
+                text-align: center;
+                max-width: 90%;
+                width: 400px;
+                font-family: 'Roboto', sans-serif;
+                color: #333;
+                border: 1px solid #ddd;
+            `;
+
+            const messageText = document.createElement('p');
+            messageText.textContent = message;
+            messageText.style.cssText = `
+                margin-bottom: 20px;
+                font-size: 1.1em;
+                line-height: 1.6;
+            `;
+
+            const closeButton = document.createElement('button');
+            closeButton.textContent = 'OK';
+            closeButton.style.cssText = `
+                background-color: #60a5fa;
+                color: white;
+                padding: 10px 25px;
+                border: none;
+                border-radius: 9999px;
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: 600;
+                transition: background-color 0.2s ease;
+            `;
+            closeButton.onmouseover = () => closeButton.style.backgroundColor = '#3b82f6';
+            closeButton.onmouseout = () => closeButton.style.backgroundColor = '#60a5fa';
+
+            closeButton.onclick = () => {
+                document.body.removeChild(messageBox);
+                document.body.removeChild(overlay);
+            };
+
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                z-index: 999;
+            `;
+            overlay.onclick = () => {
+                document.body.removeChild(messageBox);
+                document.body.removeChild(overlay);
+            };
+
+            messageBox.appendChild(messageText);
+            messageBox.appendChild(closeButton);
+            document.body.appendChild(overlay);
+            document.body.appendChild(messageBox);
+        }
+    </script>
+</body>
+</html>
