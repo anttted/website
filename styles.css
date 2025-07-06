@@ -22,7 +22,8 @@ body {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* Tailwind hover:shadow-xl */
 }
 
-/* Specific styling for services page card to make it wider */
+/* Specific styling for about and services page cards to make them wider */
+#about-page .card,
 #services-page .card {
     max-width: 90rem; /* Equivalent to Tailwind max-w-5xl, increased for wider layout */
 }
@@ -239,8 +240,8 @@ main {
 }
 
 /* About page image styling */
-.about-image {
-    max-height: 250px; /* Matches the placeholder image height */
+#about-page img {
+    max-height: 300px; /* Matches the larger placeholder image height */
     object-fit: cover;
 }
 
@@ -254,8 +255,9 @@ main {
         padding: 1.5rem; /* Restore original padding for larger screens */
     }
 
+    #about-page .card,
     #services-page .card {
-        max-width: 90rem; /* Wider services card for desktop */
+        max-width: 90rem; /* Wider about and services cards for desktop */
     }
 
     .field-box {
@@ -315,6 +317,28 @@ main {
         font-size: 1.75rem; /* Slightly larger heading for mobile */
     }
 
+    /* About page text and images */
+    .page-section#about-page .card {
+        max-width: 100%; /* Full width for mobile */
+    }
+
+    .page-section#about-page h2 {
+        font-size: 2.25rem; /* Slightly larger heading for mobile */
+    }
+
+    .page-section#about-page .prose {
+        font-size: 1.25rem; /* Adjusted for mobile readability */
+    }
+
+    .page-section#about-page img {
+        max-height: 200px; /* Slightly smaller images for mobile */
+        margin-bottom: 1rem; /* Adjusted spacing */
+    }
+
+    .page-section#about-page .space-y-12 > * + * {
+        margin-top: 2rem; /* Adjusted spacing for mobile */
+    }
+
     /* Contact page form */
     .page-section#contact-page .field-box {
         margin-bottom: 0.75rem; /* Reduced spacing between fields */
@@ -361,12 +385,7 @@ main {
     }
 
     /* About page responsive adjustments */
-    .about-image {
-        max-width: 100%;
-        margin: 0 auto 20px auto; /* Center image and add spacing when stacked */
-    }
-
-    .flex-col > p {
+    #about-page .flex-col > p {
         margin-bottom: 1rem; /* Restore margin for stacked layout */
     }
 }
